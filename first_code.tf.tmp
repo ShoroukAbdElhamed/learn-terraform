@@ -1,0 +1,11 @@
+provider "aws" {
+  version = "~> 2.70"
+  profile = "default"
+  region = "us-west-2"
+}
+
+resource "aws_s3_bucket" "tf_course" { 
+  bucket = "tf-course-2020"
+  acl    = "private"
+
+}
